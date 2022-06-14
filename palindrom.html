@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Palindrom</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var str=prompt("Enter name");
+	let rev=str.toString().split("").reverse().join("");
+	let pal = str.toString();
+	var len=str.length;
+		if(str==rev)
+		{
+			document.write(str+  " is palindrom");
+		}
+		else
+     {
+	document.write(str+ "  is not palindrom");
+     }
+     
+
+
+     //Another method only for Number
+
+     /*var str=prompt("Enter name");
+     var reverse=0,rem;
+     temp=str;
+     while(str>0)
+     {
+     	rem=str%10;
+     	reverse=reverse*10+rem;
+     	str=parseInt(str/10);
+     }
+     document.write("reverse number is"+reverse+"<br>");
+     if(reverse==temp)
+     	document.write("palindrom");
+     else
+     	document.write("Not palindrom");
+     */
+</script>
+</body>
+</html>
